@@ -1,6 +1,6 @@
 ;Lixu - Snow (Test Emiter & Scrolling)
 
-IncludeFile "lixu170.pbi"
+IncludeFile "lixu.pbi"
 
 UsePNGImageDecoder()
 
@@ -102,7 +102,7 @@ Repeat
   FlipBuffers()
 
 Until Quit
-; IDE Options = PureBasic 5.31 (Windows - x86)
+; IDE Options = PureBasic 5.42 LTS (Windows - x86)
 ; CursorPosition = 2
 ; Folding = -
 ; EnableXP
