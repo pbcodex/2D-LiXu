@@ -51,8 +51,8 @@ lixu::ParticleSpeedRange("explose", -2, -3, 2, 0.5)
 lixu::ParticleTimeToLife("explose", 40)
 
 ;Events Loop
-Repeat  ;Window
-  Repeat ;Screen
+Repeat
+  Repeat
     Event = WindowEvent()
      
     Select Event    
@@ -109,8 +109,8 @@ Repeat  ;Window
   
   FlipBuffers()
 Until KeyboardPushed(#PB_Key_Escape)
-; IDE Options = PureBasic 5.31 (Windows - x86)
-; CursorPosition = 94
-; FirstLine = 57
-; Folding = --
+; IDE Options = PureBasic 5.42 LTS (Windows - x86)
+; CursorPosition = 54
+; FirstLine = 41
+; Folding = -
 ; EnableXP

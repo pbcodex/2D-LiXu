@@ -18,7 +18,7 @@ DeclareModule Lixu
   
   Declare FPS()
   ;Sprite
-  Declare SceneAddSprite(sprite,file$,CenterX=0,CenterY=0,alpha=255,BM=0,color=#White)
+  Declare SceneAddSprite(sprite,file$,CenterX=0,CenterY=0,alpha=255,BM=0,color=$FFFFFF)
   Declare SpriteSetXY(sprite, x, y)
   Declare SpriteDraw(sprite, x=0, y=0)
   Declare SpriteFlipHorizontal(Sprite)
@@ -264,7 +264,7 @@ Module lixu
 
  
   ;-Public Sprite
-  Procedure SceneAddSprite(Sprite, File$, CenterX=0, CenterY=0, Alpha=255, BM=0, Color=#White)
+  Procedure SceneAddSprite(Sprite, File$, CenterX=0, CenterY=0, Alpha=255, BM=0, Color=$FFFFFF)
       
     If sprite = #PB_Any
       Sprite = LoadSprite(#PB_Any, file$, #PB_Sprite_AlphaBlending)
@@ -1005,8 +1005,8 @@ Module lixu
   EndProcedure 
   
 EndModule
-; IDE Options = PureBasic 5.31 (Windows - x86)
-; CursorPosition = 822
-; FirstLine = 812
-; Folding = ----------------
+; IDE Options = PureBasic 5.42 LTS (Windows - x86)
+; CursorPosition = 266
+; FirstLine = 263
+; Folding = --------------
 ; EnableXP

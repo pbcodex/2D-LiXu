@@ -14,11 +14,11 @@ OpenWindow(0, 0, 0, 800, 600, "Test", #PB_Window_SystemMenu|#PB_Window_ScreenCen
 OpenWindowedScreen(WindowID(0), 0, 0, 800, 600)
 
 ;Load Background
-Background = LoadSprite(#PB_Any, "Assets\image\blur1.jpg", #PB_Sprite_AlphaBlending)
+Background = LoadSprite(#PB_Any, "Assets/image/blur1.jpg", #PB_Sprite_AlphaBlending)
 ZoomSprite(Background, 800, 600)
 
 ;Load Danil
-Danil = LoadSprite(#PB_Any, "Assets\image\danil_base.png", #PB_Sprite_AlphaBlending)
+Danil = LoadSprite(#PB_Any, "Assets/image/danil_base.png", #PB_Sprite_AlphaBlending)
 
 ;Danil Add animations
 lixu::SpriteAddAnimation(Danil, "walk", 0, 11, 102, 135, 100)
@@ -77,6 +77,8 @@ Repeat
   FlipBuffers()
   
 Until KeyboardPushed(#PB_Key_Escape)
-; IDE Options = PureBasic 5.31 (Windows - x86)
-; CursorPosition = 2
+; IDE Options = PureBasic 5.42 LTS (Windows - x86)
+; CursorPosition = 23
+; FirstLine = 12
+; Folding = -
 ; EnableXP

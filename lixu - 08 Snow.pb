@@ -11,12 +11,12 @@ OpenWindow(0, 0, 0, 800, 600, "Snow Test", #PB_Window_SystemMenu|#PB_Window_Scre
 OpenWindowedScreen(WindowID(0), 0, 0, 800, 600)
 
 ;Load SpriteScroll :Background (Background1, Background2)  & foreground (Background3)
-Background1 = lixu::ScrollSpriteCreate(#PB_Any, "assets\image\parallax13.png") 
-Background2 = lixu::ScrollSpriteCreate(#PB_Any, "assets\image\parallax12.png",0,0,255,0,0,2,0)
-Background3 = lixu::ScrollSpriteCreate(#PB_Any, "assets\image\parallax0.png",0,0,255,0,0,2,0)
+Background1 = lixu::ScrollSpriteCreate(#PB_Any, "assets/image/parallax13.png") 
+Background2 = lixu::ScrollSpriteCreate(#PB_Any, "assets/image/parallax12.png",0,0,255,0,0,2,0)
+Background3 = lixu::ScrollSpriteCreate(#PB_Any, "assets/image/parallax0.png",0,0,255,0,0,2,0)
 
 ;Load Sprite Player
-Player = LoadSprite(#PB_Any, "assets\image\dude.png", #PB_Sprite_AlphaBlending)
+Player = LoadSprite(#PB_Any, "assets/image/dude.png", #PB_Sprite_AlphaBlending)
 
 ;Player Add animations
 lixu::SpriteAddAnimation(Player, "Left", 0, 3, 32, 48, 100)
@@ -25,7 +25,7 @@ lixu::SpriteAddAnimation(Player, "Right", 5, 8, 32, 48, 100)
 lixu::SpriteSetAnimation(Player, "Wait")
 
 ;Load particle image
-Flake = LoadSprite(#PB_Any, "assets\image\star_particle.png", #PB_Sprite_AlphaBlending )
+Flake = LoadSprite(#PB_Any, "assets/image/star_particle.png", #PB_Sprite_AlphaBlending )
 
 ;Create emitter
 lixu::EmitterCreate("snow", #PB_Particle_Box, Flake, 1600, 600)
@@ -103,6 +103,6 @@ Repeat
 
 Until Quit
 ; IDE Options = PureBasic 5.42 LTS (Windows - x86)
-; CursorPosition = 2
+; CursorPosition = 27
 ; Folding = -
 ; EnableXP

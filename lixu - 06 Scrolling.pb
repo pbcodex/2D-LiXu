@@ -9,8 +9,8 @@ OpenWindow(0, 0, 0, 800, 600, "Scrolling Test", #PB_Window_SystemMenu|#PB_Window
 OpenWindowedScreen(WindowID(0), 0, 0, 800, 600)
 
 ;Load ScrollSprite background
-Background1 = lixu::ScrollSpriteCreate(#PB_Any, "assets\image\starfield.jpg",0,0,255,1)
-Background2 = lixu::ScrollSpriteCreate(#PB_Any, "assets\image\starfield.jpg",0,0,180,1)
+Background1 = lixu::ScrollSpriteCreate(#PB_Any, "assets/image/starfield.jpg",0,0,255,1)
+Background2 = lixu::ScrollSpriteCreate(#PB_Any, "assets/image/starfield.jpg",0,0,180,1)
 
 Repeat
   Repeat
@@ -32,6 +32,6 @@ Repeat
   FlipBuffers()
   
 Until KeyboardPushed(#PB_Key_Escape)
-; IDE Options = PureBasic 5.31 (Windows - x86)
-; CursorPosition = 10
+; IDE Options = PureBasic 5.42 LTS (Windows - x86)
+; CursorPosition = 12
 ; EnableXP

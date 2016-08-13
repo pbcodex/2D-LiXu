@@ -11,7 +11,7 @@ OpenWindow(0, 0, 0, 800, 600, "Test", #PB_Window_SystemMenu|#PB_Window_ScreenCen
 OpenWindowedScreen(WindowID(0), 0, 0, 800, 600)
 
 ;Create sprite
-Bird = LoadSprite(#PB_Any, "Assets\image\bird.png", #PB_Sprite_AlphaBlending)
+Bird = LoadSprite(#PB_Any, "Assets/image/bird.png", #PB_Sprite_AlphaBlending)
 
 ;Add animations
 lixu::SpriteAddAnimation(Bird, "left", 0, 3, 64, 64, 130)
@@ -50,7 +50,7 @@ Repeat
   
   FlipBuffers()
 Until KeyboardPushed(#PB_Key_Escape)
-; IDE Options = PureBasic 5.40 LTS Beta 3 (Windows - x86)
-; CursorPosition = 10
+; IDE Options = PureBasic 5.42 LTS (Windows - x86)
+; CursorPosition = 12
 ; Folding = -
 ; EnableXP

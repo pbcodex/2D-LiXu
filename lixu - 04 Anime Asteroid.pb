@@ -10,7 +10,7 @@ OpenWindow(0, 0, 0, 800, 600, "Test", #PB_Window_SystemMenu|#PB_Window_ScreenCen
 OpenWindowedScreen(WindowID(0), 0, 0, 800, 600)
 
 ;Load sprite
-Asteroid = LoadSprite(#PB_Any, "Assets\image\asteroid1.png", #PB_Sprite_AlphaBlending)
+Asteroid = LoadSprite(#PB_Any, "Assets/image/asteroid1.png", #PB_Sprite_AlphaBlending)
 
 ;Create and set animation 
 lixu::SpriteAddAnimation(Asteroid, "rotate", 0, 18, 72, 72, 110)
@@ -37,6 +37,6 @@ Repeat
   FlipBuffers()
   
 Until KeyboardPushed(#PB_Key_Escape)
-; IDE Options = PureBasic 5.31 (Windows - x86)
-; CursorPosition = 35
+; IDE Options = PureBasic 5.42 LTS (Windows - x86)
+; CursorPosition = 13
 ; EnableXP

@@ -17,8 +17,8 @@ lixu::ParticleSpeedRange("example",0, 0.5, 0, 1)
 lixu::ParticleTimeToLife("example", 400)
 
 ;Events Loop
-Repeat  ;Window
-  Repeat ;Screen
+Repeat
+  Repeat
     Event = WindowEvent()
      
     Select Event    
@@ -35,6 +35,6 @@ Repeat  ;Window
   
   FlipBuffers()
 Until KeyboardPushed(#PB_Key_Escape)
-; IDE Options = PureBasic 5.31 (Windows - x86)
-; CursorPosition = 33
+; IDE Options = PureBasic 5.42 LTS (Windows - x86)
+; CursorPosition = 20
 ; EnableXP

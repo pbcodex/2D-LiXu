@@ -12,11 +12,11 @@ OpenWindow(0, 0, 0, 800, 600, "Paralax Test", #PB_Window_SystemMenu|#PB_Window_S
 OpenWindowedScreen(WindowID(0), 0, 0, 800, 600)
 
 ;Load SpriteScrollBackground & ground
-Background = lixu::ScrollSpriteCreate(#PB_Any, "assets\image\background.jpg")
-Ground = lixu::ScrollSpriteCreate(#PB_Any, "assets\image\ground.jpg")
+Background = lixu::ScrollSpriteCreate(#PB_Any, "assets/image/background.jpg")
+Ground = lixu::ScrollSpriteCreate(#PB_Any, "assets/image/ground.jpg")
 
 ;Load Sprite Bird
-Bird = LoadSprite(#PB_Any, "assets\image\bird.png", #PB_Sprite_AlphaBlending)
+Bird = LoadSprite(#PB_Any, "assets/image/bird.png", #PB_Sprite_AlphaBlending)
 
 ;Add animation
 lixu::SpriteAddAnimation(Bird, "left", 0, 3, 64, 64, 130)
@@ -66,8 +66,7 @@ Repeat
   FlipBuffers() 
   
 Until Quit
-; IDE Options = PureBasic 5.31 (Windows - x86)
-; CursorPosition = 63
-; FirstLine = 21
+; IDE Options = PureBasic 5.42 LTS (Windows - x86)
+; CursorPosition = 20
 ; Folding = -
 ; EnableXP

@@ -14,7 +14,7 @@ OpenWindow(0, 0, 0, 800, 600, "Lixu Particle", #PB_Window_SystemMenu|#PB_Window_
 OpenWindowedScreen(WindowID(0), 0, 0, 800, 600)
 
 ;Load Sprite
-star = LoadSprite(#PB_Any, "assets\image\star_particle.png", #PB_Sprite_AlphaBlending)
+star = LoadSprite(#PB_Any, "assets/image/star_particle.png", #PB_Sprite_AlphaBlending)
 
 ;Create particles emitter
 lixu::EmitterCreate("example", #PB_Particle_Point, star)
@@ -26,8 +26,8 @@ lixu::ParticleRotateRange("example", -3, 3)
 lixu::ParticleTimeToLife("example", 200)
 
 ;Events Loop
-Repeat  ;Window
-  Repeat ;Screen
+Repeat
+  Repeat
     Event = WindowEvent()
      
     Select Event    
@@ -46,7 +46,7 @@ Repeat  ;Window
   
   FlipBuffers()
 Until KeyboardPushed(#PB_Key_Escape)
-; IDE Options = PureBasic 5.31 (Windows - x86)
-; CursorPosition = 44
-; FirstLine = 1
+; IDE Options = PureBasic 5.42 LTS (Windows - x86)
+; CursorPosition = 43
+; FirstLine = 2
 ; EnableXP
